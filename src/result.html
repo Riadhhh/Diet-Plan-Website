@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kalkulator BMI</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Hasil Perhitungan</h1>
+            <div class="result">
+                <div class="result-item">
+                    <img src="ikon/info-circle.svg" alt="BMI Icon">
+                    <p>BMI Anda adalah</p>
+                    <div id="result"><span id="bmiResult">00.00</span></div>
+                </div>
+                <div class="result-item">
+                    <img src="ikon/speedometer2.svg" alt="Weight Condition Icon">
+                    <p>Kondisi Berat Badan</p>
+                    <div id="bmiClassification"></div>
+                </div>
+                <div class="result-item">
+                    <img src="ikon/hourglass-split.svg" alt="Calories Icon">
+                    <p>Kalori Harian Disarankan</p>
+                    <div id="caloriesResult"></div>
+                </div>
+                <div class="result-item">
+                    <img src="ikon/heart-pulse.svg" alt="Health Advice Icon">
+                    <p>Saran Kesehatan</p>
+                    <div id="adviceResult"></div>
+                </div>
+                <div class="result-item">
+                    <img src="ikon/hand-thumbs-up.svg" alt="Ideal Weight Icon">
+                    <p>Berat Badan Ideal</p>
+                    <div id="idealWeightResult"></div>
+                </div>
+                <div class="result-item">
+                    <img src="ikon/hourglass-split.svg" alt="Time to Ideal Weight Icon">
+                    <p>Waktu Ke Berat Ideal</p>
+                    <div id="timeToIdealWeight"></div>
+                </div>
+            </div>
+
+            <div class="health-plan">
+                <h2>Rencana Kesehatan Anda</h2>
+                <div class="plan-item">
+                    <h3>Rencana Diet</h3>
+                    <p id="dietPlan"></p>
+                </div>
+                <div class="plan-item">
+                    <h3>Rencana Olahraga</h3>
+                    <p id="exercisePlan"></p>
+                </div>
+            </div>
+
+            <button onclick="window.location.href='bmi.html'" class="calculate">Hitung ulang</button>
+
+            <div class="back">
+                <p>Back to the previous web?</p>
+                <a href="index.html">
+                  <button class="back-button">Go Back</button>
+                </a>
+              </div>
+              
+        </div>
+    </div>
+
+    <!-- Modal for alerts -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modalText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
